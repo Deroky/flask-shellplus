@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-from flask_shellplus import __version__ as version, __doc__ as description
 
 
 def fread(fpath):
@@ -9,12 +8,12 @@ def fread(fpath):
 
 setup(
     name='Flask-ShellPlus',
-    version=version,
+    version='0.0.3',
     url='http://github.com/kxxoling/flask-shellplus/',
     license='MIT',
     author='Kane Blueriver',
     author_email='kxxoling@gmail.com',
-    description=description,
+    description='Flask shell command based on Flask-Script to enhance its shell',
     long_description=fread('README.rst'),
     packages=find_packages(),
     zip_safe=False,
